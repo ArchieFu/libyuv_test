@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF1EDC5B-5E02-3375-AA54-C280FF4BA7B3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\leixiaohua\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\leixiaohua\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\leixiaohua\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\leixiaohua\libyuv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\leixiaohua\libyuv\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/project/leixiaohua/libyuv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\myfile\download\cmake-3.14.6-win64-x64\bin\cmake.exe -SE:/project/leixiaohua/libyuv -BE:/project/leixiaohua/libyuv/build --check-stamp-file E:/project/leixiaohua/libyuv/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPack.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPackComponent.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindJPEG.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Templates\CPackConfig.cmake.in;E:\project\leixiaohua\libyuv\CM_linux_packages.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCXXCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeRCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\project\leixiaohua\libyuv\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/project/leixiaohua/libyuv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\myfile\download\cmake-3.14.6-win64-x64\bin\cmake.exe -SE:/project/leixiaohua/libyuv -BE:/project/leixiaohua/libyuv/build --check-stamp-file E:/project/leixiaohua/libyuv/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPack.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPackComponent.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindJPEG.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Templates\CPackConfig.cmake.in;E:\project\leixiaohua\libyuv\CM_linux_packages.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCXXCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeRCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\project\leixiaohua\libyuv\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/project/leixiaohua/libyuv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\myfile\download\cmake-3.14.6-win64-x64\bin\cmake.exe -SE:/project/leixiaohua/libyuv -BE:/project/leixiaohua/libyuv/build --check-stamp-file E:/project/leixiaohua/libyuv/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPack.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPackComponent.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindJPEG.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Templates\CPackConfig.cmake.in;E:\project\leixiaohua\libyuv\CM_linux_packages.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCXXCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeRCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\project\leixiaohua\libyuv\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/project/leixiaohua/libyuv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\myfile\download\cmake-3.14.6-win64-x64\bin\cmake.exe -SE:/project/leixiaohua/libyuv -BE:/project/leixiaohua/libyuv/build --check-stamp-file E:/project/leixiaohua/libyuv/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPack.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\CPackComponent.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindJPEG.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;D:\myfile\download\cmake-3.14.6-win64-x64\share\cmake-3.14\Templates\CPackConfig.cmake.in;E:\project\leixiaohua\libyuv\CM_linux_packages.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeCXXCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeRCCompiler.cmake;E:\project\leixiaohua\libyuv\build\CMakeFiles\3.14.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\project\leixiaohua\libyuv\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\project\leixiaohua\libyuv\build\ZERO_CHECK.vcxproj">
+      <Project>{B51FC00D-2965-3457-A3CC-7E39D3526878}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\leixiaohua\libyuv\build\yuv.vcxproj">
+      <Project>{D0724350-9960-3B7D-900D-4641D8CD0762}</Project>
+      <Name>yuv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\leixiaohua\libyuv\build\yuv_shared.vcxproj">
+      <Project>{1F331F8B-86A0-32C0-A855-85F2D7AFACEB}</Project>
+      <Name>yuv_shared</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\leixiaohua\libyuv\build\yuvconvert.vcxproj">
+      <Project>{82F3EE49-6244-3B8C-8A9D-2724709EE33F}</Project>
+      <Name>yuvconvert</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

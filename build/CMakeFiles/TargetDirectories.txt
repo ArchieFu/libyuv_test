@@ -1,0 +1,7 @@
+E:/project/leixiaohua/libyuv/build/CMakeFiles/yuv.dir
+E:/project/leixiaohua/libyuv/build/CMakeFiles/yuv_shared.dir
+E:/project/leixiaohua/libyuv/build/CMakeFiles/yuvconvert.dir
+E:/project/leixiaohua/libyuv/build/CMakeFiles/PACKAGE.dir
+E:/project/leixiaohua/libyuv/build/CMakeFiles/INSTALL.dir
+E:/project/leixiaohua/libyuv/build/CMakeFiles/ALL_BUILD.dir
+E:/project/leixiaohua/libyuv/build/CMakeFiles/ZERO_CHECK.dir
