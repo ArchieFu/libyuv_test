@@ -24,16 +24,20 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
 
+build/.vs
 *.tlog
 *.ipch
 *.pdb
 *.log
 *.ilk
 *.db
+*.suo
+*.opendb
+*.db-shm
+*.db-wal
